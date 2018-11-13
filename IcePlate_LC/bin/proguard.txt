@@ -1,0 +1,45 @@
+# view AndroidManifest.xml #generated:63
+-keep class com.ice.ice_plate.AliIceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.ice.ice_plate.CameraActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.ice.ice_plate.CameraFromPicActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.ice.ice_plate.FsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.ice.ice_plate.ResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.ice.iceplate.ActivateService { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.ice.iceplate.RecogService { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.ice.preview.ImagePreviewActivity { <init>(...); }
+
+# view res/layout/preview.xml #generated:12
+-keep class com.ice.preview.my.CropImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.ice.preview.my.ImagePreviewAty { <init>(...); }
+
+# view res/layout/activity_image_preview.xml #generated:10
+-keep class com.ice.preview.zoom.ViewPagerFixed { <init>(...); }
+
+# view res/layout/activity_camera.xml #generated:34
+-keep class com.ice.view.ViewfinderView { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.ice.widget.ImageSelectorActivity { <init>(...); }
+
+# view res/layout/adapter_fileselect_item.xml #generated:66
+-keep class dr.android.fileselector.InterceptLinearLayout { <init>(...); }
+
+# onClick res/layout/view_title_bar.xml #generated:8
+-keepclassmembers class * { *** btnBack(...); }
+

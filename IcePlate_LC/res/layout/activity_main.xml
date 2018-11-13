@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ice.ice_plate.MainActivity" 
+    >
+
+    <Button
+        android:id="@+id/btn_by_photo"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="202dp"
+        android:text="@string/takepicReg"
+        android:background="@drawable/shape_blue_bg"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_by_vedio"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_by_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/shape_blue_bg"
+        android:textColor="@color/white"
+        android:text="@string/videoReg"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_activate"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/btn_by_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="83dp"
+        android:text="@string/activate" 
+        android:background="@drawable/shape_blue_bg"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <TextView 
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="版本号"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#C0C0C0"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_version"
+		android:layout_alignParentLeft="true"
+		android:layout_marginLeft="10dp"
+        android:text="公司名称"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="#C0C0C0"
+        />
+    
+
+</RelativeLayout>

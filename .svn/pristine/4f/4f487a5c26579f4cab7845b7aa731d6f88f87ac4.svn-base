@@ -1,0 +1,27 @@
+# view AndroidManifest.xml #generated:53
+-keep class com.ice.ice_plate.CameraActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.ice.ice_plate.CameraFromPicActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.ice.ice_plate.FsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.ice.ice_plate.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.ice.ice_plate.ResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.ice.iceplate.ActivateService { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.ice.iceplate.RecogService { <init>(...); }
+
+# view res/layout/activity_camera.xml #generated:34
+-keep class com.ice.view.ViewfinderView { <init>(...); }
+
+# view res/layout/adapter_fileselect_item.xml #generated:66
+-keep class dr.android.fileselector.InterceptLinearLayout { <init>(...); }
+

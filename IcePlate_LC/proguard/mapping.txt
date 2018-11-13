@@ -1,0 +1,556 @@
+com.ice.entity.IceRects -> com.ice.a.a:
+    int s16Left -> a
+    int s16Top -> b
+    int s16Right -> c
+    int s16Bottom -> d
+    int getS16Left() -> a
+    void setS16Left(int) -> a
+    int getS16Top() -> b
+    void setS16Top(int) -> b
+    int getS16Right() -> c
+    void setS16Right(int) -> c
+    int getS16Bottom() -> d
+    void setS16Bottom(int) -> d
+com.ice.entity.IceVlprInitParas -> com.ice.a.b:
+    int s32PlateConfidThrld -> a
+    void setS32PlateConfidThrld(int) -> a
+com.ice.entity.IceVlprOutputs -> com.ice.a.c:
+    java.lang.String as8PlateNum -> a
+    com.ice.entity.IceRects stPlateRect -> b
+    float flConfidence -> c
+    int ePlateColor -> d
+    long ePlateType -> e
+    int eVehicleColor -> f
+    java.lang.String getAs8PlateNum() -> a
+    com.ice.entity.IceRects getStPlateRect() -> b
+    float getFlConfidence() -> c
+    int getePlateColor() -> d
+    long getePlateType() -> e
+    int geteVehicleColor() -> f
+com.ice.entity.IceVlprProcParas -> com.ice.a.d:
+    int s32MinPlateWidth -> a
+    int s32MaxPlateWidth -> b
+    com.ice.entity.IceRects stRecRect -> c
+    void setS32MinPlateWidth(int) -> a
+    void setS32MaxPlateWidth(int) -> b
+    void setStRecRect(com.ice.entity.IceRects) -> a
+com.ice.entity.IceVlprRults -> com.ice.a.e:
+    int s32NumOutput -> a
+    com.ice.entity.IceVlprOutputs[] astOutput -> b
+    int getS32NumOutput() -> a
+    com.ice.entity.IceVlprOutputs[] getAstOutput() -> b
+    java.lang.String toString() -> toString
+com.ice.entity.IceYUV422pImages -> com.ice.a.f:
+    int s32Width -> a
+    int s32Height -> b
+    byte[] pu8YData -> c
+    void setS32Width(int) -> a
+    void setS32Height(int) -> b
+    void setPu8YData(byte[]) -> a
+com.ice.entity.PlateIDCfg -> com.ice.a.g:
+    int bRotate -> a
+    int left -> b
+    int right -> c
+    int top -> d
+    int bottom -> e
+com.ice.entity.PlateRecognitionParameter -> com.ice.a.h:
+    byte[] picByte -> a
+    int width -> b
+    int height -> c
+    com.ice.entity.PlateIDCfg plateIDCfg -> d
+com.ice.ice_plate.CameraActivity -> com.ice.ice_plate.CameraActivity:
+    android.hardware.Camera camera -> e
+    android.view.SurfaceView surfaceView -> f
+    java.lang.String PATH -> g
+    android.widget.ImageButton back_btn -> h
+    android.widget.ImageButton flash_btn -> i
+    android.widget.ImageButton back -> j
+    android.widget.ImageButton take_pic -> k
+    com.ice.view.ViewfinderView myview -> l
+    int width -> m
+    int height -> n
+    java.util.TimerTask timer -> o
+    int preWidth -> p
+    int preHeight -> q
+    java.lang.String number -> r
+    java.lang.String color -> s
+    boolean isFatty -> t
+    android.view.SurfaceHolder holder -> u
+    int iInitPlateIDSDK -> v
+    java.lang.String[] fieldvalue -> w
+    int rotation -> x
+    int tempUiRot -> y
+    android.graphics.Bitmap bitmap1 -> z
+    android.os.Vibrator mVibrator -> A
+    com.ice.entity.PlateRecognitionParameter prp -> B
+    byte[] tempData -> C
+    boolean isSuccess -> D
+    android.view.animation.Animation scaleAnimation -> E
+    boolean isAnimationEnd -> F
+    boolean isCamera -> G
+    boolean recogType -> H
+    boolean isFirstPic -> I
+    boolean isClick -> J
+    com.ice.iceplate.RecogService$MyBinder recogBinder -> a
+    android.content.ServiceConnection recogConn -> b
+    android.os.Handler handler -> K
+    int nums -> c
+    int[] fieldname -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void findView() -> b
+    void setButton() -> c
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void onPreviewFrame(byte[],android.hardware.Camera) -> onPreviewFrame
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+    void initCamera(android.view.SurfaceHolder,int) -> a
+    void getResult(java.lang.String[]) -> a
+    void onStop() -> onStop
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    java.lang.String savePicture(android.graphics.Bitmap,java.lang.String) -> a
+    java.lang.String pictureName() -> a
+    void onAnimationStart(android.view.animation.Animation) -> onAnimationStart
+    void onAnimationEnd(android.view.animation.Animation) -> onAnimationEnd
+    void onAnimationRepeat(android.view.animation.Animation) -> onAnimationRepeat
+    void access$0(com.ice.ice_plate.CameraActivity,int) -> a
+    int access$1(com.ice.ice_plate.CameraActivity) -> a
+    void access$2(com.ice.ice_plate.CameraActivity,java.lang.String[]) -> a
+    void access$3(com.ice.ice_plate.CameraActivity,int) -> b
+    void access$4(com.ice.ice_plate.CameraActivity,int) -> c
+    void access$5(com.ice.ice_plate.CameraActivity,int) -> d
+    void access$6(com.ice.ice_plate.CameraActivity) -> b
+    android.view.SurfaceHolder access$7(com.ice.ice_plate.CameraActivity) -> c
+    int access$8(com.ice.ice_plate.CameraActivity) -> d
+    void access$9(com.ice.ice_plate.CameraActivity,android.view.SurfaceHolder,int) -> a
+    boolean access$10(com.ice.ice_plate.CameraActivity) -> e
+    boolean access$11(com.ice.ice_plate.CameraActivity) -> f
+    void access$12(com.ice.ice_plate.CameraActivity,boolean) -> a
+    android.hardware.Camera access$13(com.ice.ice_plate.CameraActivity) -> g
+    void access$14(com.ice.ice_plate.CameraActivity,boolean) -> b
+    boolean access$15(com.ice.ice_plate.CameraActivity) -> h
+    int access$16(com.ice.ice_plate.CameraActivity) -> i
+    int access$17(com.ice.ice_plate.CameraActivity) -> j
+    void access$18(com.ice.ice_plate.CameraActivity,android.view.animation.Animation) -> a
+    android.view.animation.Animation access$19(com.ice.ice_plate.CameraActivity) -> k
+    com.ice.view.ViewfinderView access$20(com.ice.ice_plate.CameraActivity) -> l
+    void access$21(com.ice.ice_plate.CameraActivity,boolean) -> c
+    java.util.TimerTask access$22(com.ice.ice_plate.CameraActivity) -> m
+com.ice.ice_plate.CameraActivity$1 -> com.ice.ice_plate.a:
+    com.ice.ice_plate.CameraActivity this$0 -> a
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+com.ice.ice_plate.CameraActivity$2 -> com.ice.ice_plate.b:
+    com.ice.ice_plate.CameraActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.ice.ice_plate.CameraActivity$3 -> com.ice.ice_plate.c:
+    com.ice.ice_plate.CameraActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.ice.ice_plate.CameraActivity$4 -> com.ice.ice_plate.d:
+    com.ice.ice_plate.CameraActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.ice.ice_plate.CameraActivity$5 -> com.ice.ice_plate.e:
+    com.ice.ice_plate.CameraActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.ice.ice_plate.CameraActivity$6 -> com.ice.ice_plate.f:
+    com.ice.ice_plate.CameraActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.ice.ice_plate.CameraActivity access$0(com.ice.ice_plate.CameraActivity$6) -> a
+com.ice.ice_plate.CameraActivity$6$1 -> com.ice.ice_plate.g:
+    com.ice.ice_plate.CameraActivity$6 this$1 -> a
+    void onAutoFocus(boolean,android.hardware.Camera) -> onAutoFocus
+com.ice.ice_plate.CameraActivity$7 -> com.ice.ice_plate.h:
+    com.ice.ice_plate.CameraActivity this$0 -> a
+    void run() -> run
+    com.ice.ice_plate.CameraActivity access$0(com.ice.ice_plate.CameraActivity$7) -> a
+com.ice.ice_plate.CameraActivity$7$1 -> com.ice.ice_plate.i:
+    com.ice.ice_plate.CameraActivity$7 this$1 -> a
+    void onAutoFocus(boolean,android.hardware.Camera) -> onAutoFocus
+com.ice.ice_plate.CameraActivity$8 -> com.ice.ice_plate.j:
+    com.ice.ice_plate.CameraActivity this$0 -> a
+    android.view.SurfaceHolder val$holder -> b
+    void onAutoFocus(boolean,android.hardware.Camera) -> onAutoFocus
+    com.ice.ice_plate.CameraActivity access$0(com.ice.ice_plate.CameraActivity$8) -> a
+com.ice.ice_plate.CameraActivity$8$1 -> com.ice.ice_plate.k:
+    com.ice.ice_plate.CameraActivity$8 this$1 -> a
+    android.view.SurfaceHolder val$holder -> b
+    void run() -> run
+com.ice.ice_plate.CameraActivity$MyThread -> com.ice.ice_plate.l:
+    com.ice.ice_plate.CameraActivity this$0 -> a
+    void run() -> run
+com.ice.ice_plate.CameraFromPicActivity -> com.ice.ice_plate.CameraFromPicActivity:
+    android.widget.TextView tvShowCarid -> d
+    java.lang.String number -> e
+    java.lang.String color -> f
+    int iInitPlateIDSDK -> g
+    java.lang.String[] fieldvalue -> h
+    android.os.Vibrator mVibrator -> i
+    com.ice.entity.PlateRecognitionParameter prp -> j
+    byte[] tempData -> k
+    com.ice.iceplate.RecogService$MyBinder recogBinder -> a
+    java.lang.StringBuffer sbfile -> l
+    java.lang.StringBuffer sb -> m
+    boolean isFirstPic -> n
+    android.content.ServiceConnection recogConn -> b
+    java.lang.String type -> o
+    java.lang.String path -> p
+    java.lang.Thread tt -> q
+    int[] fieldname -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    byte[] filePath2Bytes(java.lang.String) -> a
+    void findView() -> a
+    void startICEThread(java.util.List) -> a
+    java.util.List getImagePathFromSD(int) -> a
+    java.util.List GetFileList(java.lang.String,boolean,boolean) -> a
+    boolean checkIsImageFile(java.lang.String) -> b
+    void getResult(java.lang.String[]) -> a
+    void onStop() -> onStop
+    void onDestroy() -> onDestroy
+    void access$0(com.ice.ice_plate.CameraFromPicActivity,int) -> a
+    int access$1(com.ice.ice_plate.CameraFromPicActivity) -> a
+    void access$2(com.ice.ice_plate.CameraFromPicActivity,java.lang.String[]) -> a
+    byte[] access$4(com.ice.ice_plate.CameraFromPicActivity,java.lang.String) -> a
+    void access$5(com.ice.ice_plate.CameraFromPicActivity,byte[]) -> a
+    com.ice.entity.PlateRecognitionParameter access$6(com.ice.ice_plate.CameraFromPicActivity) -> b
+    void access$7(com.ice.ice_plate.CameraFromPicActivity,java.lang.String[]) -> b
+    java.lang.String[] access$8(com.ice.ice_plate.CameraFromPicActivity) -> c
+    android.widget.TextView access$9(com.ice.ice_plate.CameraFromPicActivity) -> d
+    java.lang.StringBuffer access$10(com.ice.ice_plate.CameraFromPicActivity) -> e
+com.ice.ice_plate.CameraFromPicActivity$1 -> com.ice.ice_plate.m:
+    com.ice.ice_plate.CameraFromPicActivity this$0 -> a
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+com.ice.ice_plate.CameraFromPicActivity$2 -> com.ice.ice_plate.n:
+    com.ice.ice_plate.CameraFromPicActivity this$0 -> a
+    java.util.List val$picList -> b
+    void run() -> run
+com.ice.ice_plate.CameraFromPicActivity$3 -> com.ice.ice_plate.o:
+    com.ice.ice_plate.CameraFromPicActivity this$0 -> a
+    void run() -> run
+com.ice.ice_plate.CameraFromPicActivity$4 -> com.ice.ice_plate.p:
+    com.ice.ice_plate.CameraFromPicActivity this$0 -> a
+    void run() -> run
+com.ice.ice_plate.CameraFromPicActivity$5 -> com.ice.ice_plate.q:
+    com.ice.ice_plate.CameraFromPicActivity this$0 -> a
+    void run() -> run
+com.ice.ice_plate.CameraFromPicActivity$6 -> com.ice.ice_plate.r:
+    com.ice.ice_plate.CameraFromPicActivity this$0 -> a
+    void run() -> run
+com.ice.ice_plate.CameraFromPicActivity$7 -> com.ice.ice_plate.s:
+    com.ice.ice_plate.CameraFromPicActivity this$0 -> a
+    void run() -> run
+com.ice.ice_plate.CameraFromPicActivity$8 -> com.ice.ice_plate.t:
+    com.ice.ice_plate.CameraFromPicActivity this$0 -> a
+    void run() -> run
+com.ice.ice_plate.CameraFromPicActivity$9 -> com.ice.ice_plate.u:
+    com.ice.ice_plate.CameraFromPicActivity this$0 -> a
+    void run() -> run
+com.ice.ice_plate.FsActivity -> com.ice.ice_plate.FsActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void initParams() -> a
+    void onBackPressed() -> onBackPressed
+    void onClickOkBtn() -> b
+com.ice.ice_plate.MainActivity -> com.ice.ice_plate.MainActivity:
+    java.lang.Integer FILE_SELECTOR_REQUEST_CODE -> c
+    android.widget.Button btnPic -> d
+    android.widget.Button btnVedio -> e
+    android.widget.Button btnActivate -> f
+    android.widget.EditText editText -> g
+    boolean recogMode -> h
+    android.widget.TextView tv_company -> i
+    android.widget.TextView tv_version -> j
+    java.lang.String myType -> k
+    com.ice.iceplate.ActivateService$ActivateBinder acBinder -> a
+    android.content.ServiceConnection acConnection -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void setListeners() -> a
+    void setViews() -> b
+    void onClick(android.view.View) -> onClick
+    void showSelectBg(int) -> a
+    void startActivity(java.lang.String) -> a
+    java.util.List getImagePathFromSD(int) -> b
+    boolean checkIsImageFile(java.lang.String) -> b
+    boolean checkIsVideoFile(java.lang.String) -> c
+    void activateSN() -> c
+    void onDestroy() -> onDestroy
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    java.lang.String getVersion() -> d
+    void access$0(com.ice.ice_plate.MainActivity,boolean) -> a
+    boolean access$1(com.ice.ice_plate.MainActivity) -> a
+    void access$2(com.ice.ice_plate.MainActivity,java.lang.String) -> a
+    java.util.List access$3(com.ice.ice_plate.MainActivity,int) -> a
+    android.widget.EditText access$4(com.ice.ice_plate.MainActivity) -> b
+com.ice.ice_plate.MainActivity$1 -> com.ice.ice_plate.v:
+    com.ice.ice_plate.MainActivity this$0 -> a
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+com.ice.ice_plate.MainActivity$2 -> com.ice.ice_plate.w:
+    com.ice.ice_plate.MainActivity this$0 -> a
+    android.widget.PopupWindow val$exitAppWindow -> b
+    void onClick(android.view.View) -> onClick
+com.ice.ice_plate.MainActivity$3 -> com.ice.ice_plate.x:
+    com.ice.ice_plate.MainActivity this$0 -> a
+    android.widget.PopupWindow val$exitAppWindow -> b
+    int val$type -> c
+    void onClick(android.view.View) -> onClick
+com.ice.ice_plate.MainActivity$4 -> com.ice.ice_plate.y:
+    com.ice.ice_plate.MainActivity this$0 -> a
+    android.widget.PopupWindow val$exitAppWindow -> b
+    int val$type -> c
+    void onClick(android.view.View) -> onClick
+com.ice.ice_plate.MainActivity$5 -> com.ice.ice_plate.z:
+    com.ice.ice_plate.MainActivity this$0 -> a
+    android.widget.PopupWindow val$exitAppWindow -> b
+    int val$type -> c
+    void onClick(android.view.View) -> onClick
+com.ice.ice_plate.MainActivity$6 -> com.ice.ice_plate.aa:
+    com.ice.ice_plate.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.ice.ice_plate.MainActivity$7 -> com.ice.ice_plate.ab:
+    com.ice.ice_plate.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.ice.ice_plate.ResultActivity -> com.ice.ice_plate.ResultActivity:
+    android.widget.TextView number -> a
+    android.widget.TextView color -> b
+    android.widget.Button confirm -> c
+    int width -> d
+    int height -> e
+    android.widget.TextView text_num -> f
+    android.widget.TextView text_color -> g
+    android.widget.TextView text_title -> h
+    android.widget.ImageView image -> i
+    android.widget.ImageView image_back -> j
+    java.lang.String bitmapPath -> k
+    android.graphics.Bitmap bitmap -> l
+    boolean recogType -> m
+    void onCreate(android.os.Bundle) -> onCreate
+    void findView() -> a
+    boolean access$0(com.ice.ice_plate.ResultActivity) -> a
+com.ice.ice_plate.ResultActivity$1 -> com.ice.ice_plate.ac:
+    com.ice.ice_plate.ResultActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.ice.ice_plate.ResultActivity$2 -> com.ice.ice_plate.ad:
+    com.ice.ice_plate.ResultActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.ice.iceplate.ActivateService -> com.ice.iceplate.ActivateService:
+    com.ice.iceplate.ActivateService$ActivateBinder myBinder -> a
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+com.ice.iceplate.ActivateService$ActivateBinder -> com.ice.iceplate.a:
+    com.ice.iceplate.ActivateService this$0 -> a
+    int login(java.lang.String) -> a
+com.ice.iceplate.RecogService -> com.ice.iceplate.RecogService:
+    com.ice.iceplate.RecogService$MyBinder myBinder -> a
+    int iInitPlateIDSDK -> b
+    long creatPoint -> c
+    com.ice.entity.IceVlprInitParas initPara -> d
+    com.ice.entity.IceYUV422pImages imageData -> e
+    com.ice.entity.IceVlprProcParas procPara -> f
+    com.ice.entity.IceRects stRecRect -> g
+    com.ice.entity.IceVlprOutputs output -> h
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    int initVLPR() -> a
+    java.lang.String[] doRecog(com.ice.entity.PlateRecognitionParameter) -> a
+    java.lang.String plateColor2String(int) -> a
+    java.lang.String vehicleColor2String(int) -> b
+    byte[] yuv420spRotate90(byte[],int,int) -> a
+    byte[] YUV420spRotate180(byte[],int,int) -> b
+    byte[] YUV420spRotate270(byte[],int,int) -> c
+    int access$0(com.ice.iceplate.RecogService) -> a
+com.ice.iceplate.RecogService$MyBinder -> com.ice.iceplate.b:
+    com.ice.iceplate.RecogService this$0 -> a
+    int getInitPlateIDSDK() -> a
+    java.lang.String[] doRecogDetail(com.ice.entity.PlateRecognitionParameter) -> a
+com.ice.iceplate.ReconService -> com.ice.iceplate.ReconService:
+    int IceVlprAuth(java.lang.String,int,android.content.Context) -> IceVlprAuth
+    long IceVlprCreat() -> IceVlprCreat
+    int IceVlprRelease(long) -> IceVlprRelease
+    int IceVlprInit(long,com.ice.entity.IceVlprInitParas) -> IceVlprInit
+    int IceVlprProcess(long,com.ice.entity.IceYUV422pImages,com.ice.entity.IceVlprProcParas) -> IceVlprProcess
+    com.ice.entity.IceVlprRults IceVlprGetResult(long) -> IceVlprGetResult
+    int setDataItem(java.lang.String,byte[],int) -> setDataItem
+    int getDataItem(java.lang.String,byte[],int[]) -> getDataItem
+    int IceAutoRelease() -> IceAutoRelease
+    int IceVlprAuth(java.lang.String,android.content.Context) -> a
+com.ice.util.Utils -> com.ice.b.a:
+    int[] convertYUV420_NV21toARGB8888(byte[],int,int) -> a
+    int convertYUVtoARGB(int,int,int) -> a
+    void save(java.lang.String,java.lang.String) -> a
+com.ice.util_jar.Mode -> com.ice.c.a:
+    java.lang.String ecodeString(java.lang.String) -> a
+    int getMode(java.lang.String,android.content.Context) -> a
+com.ice.util_jar.OperateFile -> com.ice.c.b:
+    void copyFileToSD(android.content.Context,java.lang.String,java.lang.String) -> a
+    java.lang.String readFileFormAssets(java.lang.String,android.content.Context) -> a
+com.ice.util_jar.PathUtils -> com.ice.c.c:
+    android.content.Context mContext -> a
+    android.os.storage.StorageManager mStorageManager -> b
+    java.lang.reflect.Method mGetPathMethod -> c
+    java.lang.String[] paths -> d
+    java.lang.String[] getPaths(android.content.Context) -> a
+com.ice.util_jar.Util -> com.ice.c.d:
+    int isFirst(android.content.Context) -> a
+    int getRecogTime(android.content.Context) -> b
+    void setRecogTime(android.content.Context) -> c
+    int getTimeFormNet() -> a
+    int setTimeToNet(int) -> a
+com.ice.view.ViewfinderView -> com.ice.view.ViewfinderView:
+    android.graphics.Paint paint -> g
+    android.graphics.Paint paintLine -> h
+    int width -> i
+    int height -> j
+    int minLength -> k
+    int length -> a
+    int top -> b
+    int bottom -> c
+    int left -> d
+    int right -> e
+    android.graphics.Rect frame -> f
+    void onDraw(android.graphics.Canvas) -> onDraw
+com.improver.lib.fileselector.fs.R -> com.a.a.a.a.a:
+com.improver.lib.fileselector.fs.R$drawable -> com.a.a.a.a.b:
+    int checkbox_selector -> checkbox_selector
+    int ic_checkbox_checked -> ic_checkbox_checked
+    int ic_checkbox_unchecked -> ic_checkbox_unchecked
+    int ic_fileselect_file -> ic_fileselect_file
+    int ic_fileselect_folder -> ic_fileselect_folder
+    int ic_fileselect_zip -> ic_fileselect_zip
+    int ic_launcher -> ic_launcher
+com.improver.lib.fileselector.fs.R$id -> com.a.a.a.a.c:
+    int action_fileselect_ok -> action_fileselect_ok
+    int action_settings -> action_settings
+    int id_fileselect_childnum -> id_fileselect_childnum
+    int id_fileselect_createtime -> id_fileselect_createtime
+    int id_fileselect_filename -> id_fileselect_filename
+    int id_fileselect_folderpath -> id_fileselect_folderpath
+    int id_fileselect_fun -> id_fileselect_fun
+    int id_fileselect_fun_parent -> id_fileselect_fun_parent
+    int id_fileselect_icon -> id_fileselect_icon
+    int id_fileselect_listview -> id_fileselect_listview
+com.improver.lib.fileselector.fs.R$layout -> com.a.a.a.a.d:
+    int activity_file_select -> activity_file_select
+    int adapter_fileselect_item -> adapter_fileselect_item
+com.improver.lib.fileselector.fs.R$menu -> com.a.a.a.a.e:
+    int file_select -> file_select
+    int fs -> fs
+    int main -> main
+dr.android.fileselector.FileSelectActivity -> dr.android.fileselector.a:
+    java.lang.String mSelectorFileTitle -> a
+    java.lang.String mSelectorFolderTitle -> b
+    java.lang.String mSelectorRootPathName -> c
+    int mSelectorMode -> d
+    int mSelectorFileIcon -> e
+    int mSelectorFolderIcon -> f
+    int mSelectorZipIcon -> g
+    int mSelectorIconWidth -> h
+    int mSelectorIconHeight -> i
+    boolean mSelectorIsMultiple -> j
+    boolean mSelectorIsZip -> k
+    android.widget.TextView mFolderPath_tv -> l
+    android.widget.ListView mFileSelectListView -> m
+    dr.android.fileselector.FileSelectAdapter mAdapter -> n
+    boolean isFileOnClickShowOk -> o
+    java.lang.String[] mFrom -> p
+    int[] mTo -> q
+    java.util.List mData -> r
+    java.util.List rootPaths -> s
+    void onCreate(android.os.Bundle) -> onCreate
+    void initIntent() -> d
+    void initParams() -> a
+    void initView() -> e
+    void initData() -> f
+    void initEvent() -> g
+    java.util.List getDataByFolderPath(java.lang.String) -> a
+    boolean isZipfile(java.lang.String) -> c
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    void refreshByParentPath(java.lang.String) -> b
+    void onClickOkBtn() -> b
+    void onBackPressed() -> onBackPressed
+    void backOrExit() -> c
+    java.lang.String getLocalDateByMilliseconds(long,java.lang.String) -> a
+dr.android.fileselector.FileSelectAdapter -> dr.android.fileselector.b:
+    android.content.Context mContext -> a
+    int mResource -> b
+    java.lang.String[] mFrom -> c
+    int[] mTo -> d
+    int mSelectorMode -> e
+    boolean mSelectorIsMultiple -> f
+    int mSelectorIconWidth -> g
+    int mSelectorIconHeight -> h
+    java.util.List mData -> i
+    int lastSelectedFolderPosition -> j
+    android.widget.CheckBox lastCheckBox -> k
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    void bindEvent(int,android.view.View,android.widget.CheckBox,java.io.File) -> a
+    void setWidthAndHeight(dr.android.fileselector.FileSelectAdapter$ViewHoder) -> a
+    void setData(java.util.List) -> a
+    java.util.List getData() -> a
+    void setSelectorMode(int) -> a
+    void setSelectorIsMultiple(boolean) -> a
+    void setSelectorIconWidth(int) -> b
+    void setSelectorIconHeight(int) -> c
+    java.util.List access$0(dr.android.fileselector.FileSelectAdapter) -> a
+    java.lang.String[] access$1(dr.android.fileselector.FileSelectAdapter) -> b
+    boolean access$2(dr.android.fileselector.FileSelectAdapter) -> c
+    int access$3(dr.android.fileselector.FileSelectAdapter) -> d
+    android.widget.CheckBox access$4(dr.android.fileselector.FileSelectAdapter) -> e
+    void access$5(dr.android.fileselector.FileSelectAdapter,int) -> a
+    void access$6(dr.android.fileselector.FileSelectAdapter,android.widget.CheckBox) -> a
+dr.android.fileselector.FileSelectAdapter$1 -> dr.android.fileselector.c:
+    dr.android.fileselector.FileSelectAdapter this$0 -> a
+    int val$position -> b
+    android.widget.CheckBox val$fun -> c
+    void onClick(android.view.View) -> onClick
+dr.android.fileselector.FileSelectAdapter$ViewHoder -> dr.android.fileselector.d:
+    android.widget.ImageView icon -> a
+    android.widget.TextView fileName -> b
+    android.widget.TextView childNum -> c
+    android.widget.TextView createTime -> d
+    android.widget.CheckBox checkboxFun -> e
+    dr.android.fileselector.FileSelectAdapter this$0 -> f
+dr.android.fileselector.FileSelectConstant -> dr.android.fileselector.e:
+    java.lang.Integer SELECTOR_MODE_FILE -> a
+    java.lang.Integer SELECTOR_MODE_FOLDER -> b
+dr.android.fileselector.InterceptLinearLayout -> dr.android.fileselector.InterceptLinearLayout:
+    boolean onInterceptTouchEvent(android.view.MotionEvent) -> onInterceptTouchEvent
+dr.android.fileselector.Storage -> dr.android.fileselector.f:
+    java.lang.String absPath -> a
+    java.lang.String pathName -> b
+    java.lang.String localName -> c
+    java.lang.String getAbsPath() -> a
+    void setPathNameByAbsPath(java.lang.String) -> a
+    void setLocalNameByAbsPath(java.lang.String) -> b
+    java.lang.String getLocalName() -> b
+dr.android.utils.FileUtil -> dr.android.a.a:
+    void sortByName(java.util.List) -> a
+    java.lang.String convertFileSize(long) -> a
+dr.android.utils.FileUtil$1 -> dr.android.a.b:
+    int compare(java.io.File,java.io.File) -> a
+    int compare(java.lang.Object,java.lang.Object) -> compare
+dr.android.utils.LogUtil -> dr.android.a.c:
+    int NOTHING -> a
+    int VERBOSE -> b
+    int DEBUG -> c
+    int INFO -> d
+    int WARN -> e
+    int ERROR -> f
+    int LEVEL -> g
+    void v(java.lang.String) -> a
+    java.lang.String getDefaultTag(java.lang.StackTraceElement) -> a
+    java.lang.String getLogInfo(java.lang.StackTraceElement) -> b
+dr.android.utils.SdCardUtil -> dr.android.a.d:
+    java.util.List sdList -> a
+    java.lang.String getInnerExterPath() -> a
+    java.util.List getAllSdcardPath() -> b
+    java.util.List getStorages() -> c
+    java.lang.String replaceAbsPathWithLocalName(java.lang.String) -> a
+    java.lang.String replaceLocalNameWithAbsPath(java.lang.String) -> b

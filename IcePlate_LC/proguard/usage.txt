@@ -1,0 +1,207 @@
+com.ice.entity.IceRects:
+    10:15:public IceRects(int,int,int,int)
+com.ice.entity.IceVlprInitParas:
+    private int astCharType0
+    private int s32MaxPlateNum
+    private int s32PlateTypeSp
+    private int s32CarColorOn
+    12:18:public IceVlprInitParas(int,int,int,int,int)
+    25:25:public int getAstCharType0()
+    29:30:public void setAstCharType0(int)
+    33:33:public int getS32MaxPlateNum()
+    37:38:public void setS32MaxPlateNum(int)
+    41:41:public int getS32PlateTypeSp()
+    45:46:public void setS32PlateTypeSp(int)
+    49:49:public int getS32CarColorOn()
+    53:54:public void setS32CarColorOn(int)
+    57:57:public int getS32PlateConfidThrld()
+com.ice.entity.IceVlprOutputs:
+    private com.ice.entity.IceRects[] astPlateCharRect
+    private float[] aflPlateCharConfid
+    private int s32PlateIntensity
+    private float flPlateAngleH
+    private float flPlateAngleV
+    21:33:public IceVlprOutputs(java.lang.String,com.ice.entity.IceRects,com.ice.entity.IceRects[],float[],float,int,int,long,int,float,float)
+    41:42:public void setAs8PlateNum(java.lang.String)
+    47:48:public void setStPlateRect(com.ice.entity.IceRects)
+    50:50:public com.ice.entity.IceRects[] getAstPlateCharRect()
+    53:54:public void setAstPlateCharRect(com.ice.entity.IceRects[])
+    56:56:public float[] getAflPlateCharConfid()
+    59:60:public void setAflPlateCharConfid(float[])
+    65:66:public void setFlConfidence(float)
+    68:68:public int getS32PlateIntensity()
+    71:72:public void setS32PlateIntensity(int)
+    77:78:public void setePlateColor(int)
+    83:84:public void setePlateType(long)
+    89:90:public void seteVehicleColor(int)
+    92:92:public float getFlPlateAngleH()
+    95:96:public void setFlPlateAngleH(float)
+    98:98:public float getFlPlateAngleV()
+    101:102:public void setFlPlateAngleV(float)
+com.ice.entity.IceVlprProcParas:
+    10:14:public IceVlprProcParas(int,int,com.ice.entity.IceRects)
+    19:19:public int getS32MinPlateWidth()
+    25:25:public int getS32MaxPlateWidth()
+    31:31:public com.ice.entity.IceRects getStRecRect()
+com.ice.entity.IceVlprRults:
+    8:11:public IceVlprRults(int,com.ice.entity.IceVlprOutputs[])
+    13:14:public IceVlprRults()
+    19:20:public void setS32NumOutput(int)
+    25:26:public void setAstOutput(com.ice.entity.IceVlprOutputs[])
+com.ice.entity.IceYUV422pImages:
+    private com.ice.entity.IceYUVFormate enPixelFormat
+    private int s32Stride
+    private int pu8UData
+    private int pu8VData
+    private int pu8UVData
+    private int u32YDataPhyAddr
+    16:26:public IceYUV422pImages(com.ice.entity.IceYUVFormate,int,int,int,byte[],int,int,int,int)
+    31:31:public com.ice.entity.IceYUVFormate getEnPixelFormat()
+    34:35:public void setEnPixelFormat(com.ice.entity.IceYUVFormate)
+    37:37:public int getS32Width()
+    43:43:public int getS32Height()
+    49:49:public int getS32Stride()
+    52:53:public void setS32Stride(int)
+    55:55:public byte[] getPu8YData()
+    61:61:public int getPu8UData()
+    64:65:public void setPu8UData(int)
+    67:67:public int getPu8VData()
+    70:71:public void setPu8VData(int)
+    73:73:public int getPu8UVData()
+    76:77:public void setPu8UVData(int)
+    79:79:public int getU32YDataPhyAddr()
+    82:83:public void setU32YDataPhyAddr(int)
+com.ice.entity.IceYUVFormate
+com.ice.entity.PlateRecognitionParameter:
+    public java.lang.String pic
+    public java.lang.String userdata
+    public java.lang.String devCode
+    public java.lang.String dataFile
+    public java.lang.String versionfile
+    public boolean isCheckDevType
+com.ice.ice_plate.CameraFromPicActivity:
+    113:113:static synthetic java.lang.Thread access$3(com.ice.ice_plate.CameraFromPicActivity)
+com.ice.ice_plate.MainActivity:
+    java.lang.String path
+    420:431:public java.lang.String getRealPathFromURI(android.net.Uri)
+    440:495:public java.lang.String getPath(android.content.Context,android.net.Uri)
+    515:530:public java.lang.String getDataColumn(android.content.Context,android.net.Uri,java.lang.String,java.lang.String[])
+    539:539:public boolean isExternalStorageDocument(android.net.Uri)
+    549:549:public boolean isDownloadsDocument(android.net.Uri)
+    559:559:public boolean isMediaDocument(android.net.Uri)
+com.ice.iceplate.BuildConfig
+com.ice.iceplate.R
+com.ice.iceplate.R$attr
+com.ice.iceplate.R$color
+com.ice.iceplate.R$dimen
+com.ice.iceplate.R$drawable
+com.ice.iceplate.R$id
+com.ice.iceplate.R$layout
+com.ice.iceplate.R$menu
+com.ice.iceplate.R$string
+com.ice.iceplate.R$style
+com.ice.iceplate.RecogService:
+    352:360:private java.util.Date string2date(java.lang.String)
+com.ice.iceplate.ReconService:
+    11:11:public ReconService()
+    public static native int removeDataItem(java.lang.String)
+com.ice.util.Utils:
+    9:9:public Utils()
+com.ice.util_jar.Mode:
+    8:8:public Mode()
+com.ice.util_jar.OperateFile:
+    14:14:public OperateFile()
+    21:80:public static void saveByteToFile(java.lang.String,byte[])
+    145:165:public static void saveStringToFile(java.lang.String,java.lang.String)
+com.ice.util_jar.PathUtils:
+    9:9:public PathUtils()
+com.ice.util_jar.Util:
+    10:10:public Util()
+    50:57:public static byte[] intToBytes2(int)
+    66:74:public static int byteToInt2(byte[])
+com.improver.lib.fileselector.fs.R:
+    9:9:public R()
+com.improver.lib.fileselector.fs.R$dimen
+com.improver.lib.fileselector.fs.R$drawable:
+    57:57:public R$drawable()
+com.improver.lib.fileselector.fs.R$id:
+    66:66:public R$id()
+com.improver.lib.fileselector.fs.R$layout:
+    78:78:public R$layout()
+com.improver.lib.fileselector.fs.R$menu:
+    82:82:public R$menu()
+com.improver.lib.fileselector.fs.R$string
+dr.android.fileselector.FileSelectActivity:
+    public static final java.lang.String TAG
+    543:543:public java.lang.String getSelectorFileTitle()
+    547:548:public void setSelectorFileTitle(java.lang.String)
+    551:551:public java.lang.String getSelectorFolderTitle()
+    555:556:public void setSelectorFolderTitle(java.lang.String)
+    559:559:public java.lang.String getSelectorRootPathName()
+    563:564:public void setSelectorRootPathName(java.lang.String)
+    567:567:public int getSelectorMode()
+    571:572:public void setSelectorMode(int)
+    575:575:public boolean isSelectorIsMultiple()
+    579:580:public void setSelectorIsMultiple(boolean)
+    583:583:public int getSelectorFolderIcon()
+    587:588:public void setSelectorFolderIcon(int)
+    591:591:public int getSelectorFileIcon()
+    595:596:public void setSelectorFileIcon(int)
+    599:599:public int getSelectorIconWidth()
+    603:604:public void setSelectorIconWidth(int)
+    607:607:public int getSelectorIconHeight()
+    611:612:public void setSelectorIconHeight(int)
+dr.android.fileselector.FileSelectAdapter:
+    176:176:public int getSelectorMode()
+    184:184:public boolean getSelectorIsMultiple()
+    192:192:public int getSelectorIconWidth()
+    200:200:public int getSelectorIconHeight()
+dr.android.fileselector.FileSelectConstant:
+    public static final java.lang.String SELECTOR_MODE_FILE_TITLE
+    public static final java.lang.String SELECTOR_MODE_FOLDER_TITLE
+    public static final java.lang.String SELECTOR_STORAGE_INNDER
+    public static final java.lang.String SELECTOR_STORAGE_OUTTER
+    public static final java.lang.String SELECTOR_STORAGE_USB
+    public static final java.lang.String SELECTOR_STORAGE_OTHER
+    public static final java.lang.String SETTINGS_TAG
+    public static final java.lang.String SELECTOR_ROOT_PATH
+    public static final java.lang.String SELECTOR_BUNDLE_PATHS
+    public static final java.lang.String SELECTOR_REQUEST_CODE_KEY
+    public static final java.lang.String SELECTOR_IS_MULTIPLE
+    public static final java.lang.String SELECTOR_IS_ZIP
+    10:10:public FileSelectConstant()
+dr.android.fileselector.Storage:
+    private static final long serialVersionUID
+    40:41:public void setAbsPath(java.lang.String)
+    63:63:public java.lang.String getPathName()
+dr.android.utils.FileUtil:
+    30:30:public FileUtil()
+    39:44:public static java.lang.String getFilePrefixName(java.io.File)
+    55:60:public static java.lang.String getFileSuffix(java.io.File)
+    71:81:public static java.util.List getChildFiles(java.io.File)
+    91:95:public static java.lang.String getParentFilePath(java.lang.String)
+    139:142:public static void fileCopyByChannel(java.lang.String,java.lang.String)
+    151:182:public static void fileCopyByChannel(java.io.File,java.io.File)
+    185:210:public static void fileCopyByInputStream(java.io.InputStream,java.lang.String)
+    218:231:public static void deleteByParentPath(java.io.File)
+    240:265:public static void copyFileByByte(java.lang.String,java.io.File)
+    273:296:public static void copyFileByCharacter(java.lang.String,java.io.File)
+    304:330:public static void copyFileByLine(java.lang.String,java.io.File)
+    338:373:public static void copyFileByBybeBuffer(java.lang.String,java.io.File)
+    405:407:public static void createFileAndFolder(java.lang.String)
+    415:435:public static void createFileAndFolder(java.io.File)
+dr.android.utils.LogUtil:
+    private static final java.lang.String SEPARATOR
+    13:13:public LogUtil()
+    34:41:public static void v(java.lang.String,java.lang.String)
+    44:49:public static void d(java.lang.String)
+    52:59:public static void d(java.lang.String,java.lang.String)
+    62:67:public static void i(java.lang.String)
+    70:77:public static void i(java.lang.String,java.lang.String)
+    80:85:public static void w(java.lang.String)
+    88:95:public static void w(java.lang.String,java.lang.String)
+    98:103:public static void e(java.lang.String)
+    106:113:public static void e(java.lang.String,java.lang.String)
+dr.android.utils.SdCardUtil:
+    23:23:public SdCardUtil()
+    35:35:public static boolean isSdCardExist()

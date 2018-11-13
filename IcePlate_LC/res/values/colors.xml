@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_window_color">#7F000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="base_bg">#eaeaea</color>
+    <color name="back">#000000</color>
+    <color name="parking_blue">#0099fd</color>
+    <color name="red">#ffcc0000</color>
+</resources>
